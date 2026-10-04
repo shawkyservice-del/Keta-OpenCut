@@ -5263,3 +5263,92 @@ textarea:focus-visible,
     color: CanvasText;
   }
 }
+
+
+/* =========================================================
+   KETA v0.6 visual layer
+   Non-destructive skin over the tested OpenCut UXP core.
+   ========================================================= */
+:root {
+  --accent: #8b5cf6;
+  --accent-hover: #a878ff;
+  --accent-dim: rgba(139, 92, 246, 0.14);
+  --border-focus: #8b5cf6;
+}
+.oc-header {
+  min-height: 42px;
+  height: auto;
+  background: linear-gradient(180deg, #22232a 0%, #1b1c21 100%);
+  border-bottom-color: #3a3c46;
+}
+.oc-logo-mark path { fill: var(--accent); }
+.oc-logo {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  font-weight: 900;
+  letter-spacing: .65px;
+}
+.keta-brand-main { color: #f4f1ff; }
+.keta-brand-sub { color: #a878ff; font-size: 10px; letter-spacing: .85px; }
+.oc-version {
+  color: #cbb7ff;
+  border-color: #594579;
+  background: #241e31;
+}
+.oc-tabs {
+  background: #191a1f;
+}
+.oc-tab {
+  border-radius: 7px;
+}
+.oc-tab.active {
+  color: #fff;
+  background: #2a2140;
+  box-shadow: inset 0 -2px 0 #9a68ff;
+}
+.oc-btn-primary {
+  background: linear-gradient(180deg, #955fff 0%, #7742e7 100%);
+  border-color: #a779ff;
+}
+.oc-btn-primary:hover:not(:disabled) {
+  background: linear-gradient(180deg, #a56fff 0%, #8650ef 100%);
+}
+.keta-test-server {
+  width: auto;
+  min-width: 92px;
+  min-height: 26px;
+  gap: 5px;
+  padding: 4px 7px;
+  border: 1px solid #55446e;
+  background: #241e31;
+  color: #d7c5ff;
+}
+.keta-test-server:hover {
+  border-color: #8b5cf6;
+  background: #2c2340;
+  color: #fff;
+}
+.keta-test-server-label {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .25px;
+}
+.oc-workspace-overview {
+  border-color: #3d3947;
+}
+.oc-workspace-kicker {
+  color: #b99aff;
+  letter-spacing: .7px;
+  font-weight: 800;
+}
+.oc-card {
+  border-color: #383a44;
+}
+.oc-card:focus-within {
+  border-color: #5d477e;
+}
+@media (max-width: 520px) {
+  .keta-test-server-label { display: none; }
+  .keta-test-server { min-width: 28px; padding: 4px 6px; }
+}
