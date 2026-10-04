@@ -5352,3 +5352,53 @@ textarea:focus-visible,
   .keta-test-server-label { display: none; }
   .keta-test-server { min-width: 28px; padding: 4px 6px; }
 }
+
+
+/* KETA server-control hotfix */
+.oc-header-left { min-width: 0; }
+.oc-header-right { flex-wrap: nowrap; }
+.keta-test-server-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: auto;
+  min-width: 104px;
+  min-height: 28px;
+  padding: 5px 8px;
+  border: 1px solid #60478b;
+  border-radius: 7px;
+  background: #241c35;
+  color: #d9c9ff;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .35px;
+  white-space: nowrap;
+}
+.keta-test-server-top:hover {
+  background: #302346;
+  border-color: #9367ed;
+  color: #fff;
+}
+.keta-server-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: #8b9099;
+}
+.keta-test-server-top[data-state="online"] .keta-server-dot {
+  background: #49c779;
+  box-shadow: 0 0 5px rgba(73,199,121,.7);
+}
+.keta-test-server-top[data-state="testing"] .keta-server-dot {
+  background: #e4ad4e;
+  box-shadow: 0 0 5px rgba(228,173,78,.55);
+}
+.keta-test-server-top[data-state="offline"] .keta-server-dot {
+  background: #dd6670;
+}
+@media (max-width: 620px) {
+  .oc-version { display: none; }
+  .keta-test-server-top { min-width: 92px; }
+}
