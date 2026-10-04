@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n="uxp.document_title">OpenCut UXP</title>
+  <title>KETA AutoEdit</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="uxp-command-center-tokens.css">
   <link rel="stylesheet" href="uxp-command-center-layout.css">
@@ -20,8 +20,8 @@
         <svg class="oc-logo-mark" width="16" height="16" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 2.5a3 3 0 00-1.76 5.43L7.33 11l-5.09 3.07A3 3 0 104.8 19.5a3 3 0 001.76-5.43L8.93 12.6 16.5 17V5L8.93 9.4 6.56 7.93A3 3 0 004 2.5z" fill="var(--accent)"/>
         </svg>
-        <span class="oc-logo" translate="no">OpenCut</span>
-        <span class="oc-version" id="uxpHeaderVersion">v1.55.1</span>
+        <span class="oc-logo" translate="no"><span class="keta-brand-main">KETA</span> <span class="keta-brand-sub">AUTOEDIT</span></span>
+        <span class="oc-version" id="uxpHeaderVersion">KETA v0.6 • core 1.55.1</span>
       </div>
       <div class="oc-header-right">
         <details class="oc-connection-details" id="connectionDetails">
@@ -33,8 +33,8 @@
           <div class="oc-connection-detail-panel" id="statusBar" data-state="neutral">
             <span id="statusText" role="status" aria-live="polite" data-i18n="uxp.status.ready">Ready</span>
             <span id="statusRight" class="oc-status-right"></span>
-            <button type="button" class="oc-icon-btn" id="refreshBtn" title="Refresh connection" aria-label="Refresh connection" data-i18n-title="conn.refresh_connection" data-i18n-aria-label="conn.refresh_connection">
-              <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2.5 8a5.5 5.5 0 019.3-4h-2a.75.75 0 000 1.5h3.5a.75.75 0 00.75-.75V1.5a.75.75 0 00-1.5 0v1.7A7 7 0 101 8a.75.75 0 001.5 0z"/></svg>
+            <button type="button" class="oc-icon-btn" id="refreshBtn" class="oc-icon-btn keta-test-server" title="Test Server" aria-label="Test Server">
+              <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor"><path d="M2.5 8a5.5 5.5 0 019.3-4h-2a.75.75 0 000 1.5h3.5a.75.75 0 00.75-.75V1.5a.75.75 0 00-1.5 0v1.7A7 7 0 101 8a.75.75 0 001.5 0z"/></svg><span class="keta-test-server-label">TEST SERVER</span>
             </button>
           </div>
         </details>
@@ -113,12 +113,12 @@
     <main class="oc-content" id="mainContent">
       <section class="oc-workspace-overview" aria-labelledby="workspaceOverviewTitle" aria-label="Workspace overview" data-i18n-aria-label="uxp.workspace.overview_region">
         <div class="oc-workspace-copy">
-          <div class="oc-workspace-kicker" data-i18n="uxp.workspace.studio">OpenCut Studio</div>
+          <div class="oc-workspace-kicker">KETA AUTOEDIT • PREMIERE PRO</div>
           <h1 class="oc-workspace-title" id="workspaceOverviewTitle" data-i18n="uxp.workspace.cut_title">Cut &amp; Clean</h1>
           <p class="oc-workspace-subtitle" id="workspaceOverviewSubtitle" data-i18n="uxp.workspace.cut_subtitle">Reviewable cuts, fillers, and pacing.</p>
           <div class="oc-workspace-actions" role="group" aria-label="Workspace actions" data-i18n-aria-label="uxp.workspace.shortcuts">
             <button type="button" class="oc-btn oc-btn-primary" id="workspaceChooseClipBtn" data-offline-enabled="true" data-i18n="uxp.workspace.choose_media">Choose Media</button>
-            <button type="button" class="oc-btn oc-btn-secondary" id="workspaceRefreshBtn" data-workspace-command="refresh-backend" data-i18n="common.refresh">Refresh</button>
+            <button type="button" class="oc-btn oc-btn-secondary" id="workspaceRefreshBtn" data-workspace-command="refresh-backend">TEST SERVER</button>
             <button type="button" class="oc-btn oc-btn-secondary" id="workspaceSettingsBtn" data-workspace-command="open-settings" data-i18n="uxp.tabs.settings">Settings</button>
           </div>
         </div>
