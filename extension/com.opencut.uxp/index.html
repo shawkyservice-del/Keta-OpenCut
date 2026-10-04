@@ -24,6 +24,10 @@
         <span class="oc-version" id="uxpHeaderVersion">KETA v0.6 • core 1.55.1</span>
       </div>
       <div class="oc-header-right">
+        <button type="button" class="oc-btn oc-btn-secondary oc-btn-sm keta-test-server-top" id="ketaTestServerBtn" data-offline-enabled="true" aria-label="Test KETA local server">
+          <span class="keta-server-dot" id="ketaServerDot"></span>
+          <span id="ketaTestServerLabel">TEST SERVER</span>
+        </button>
         <details class="oc-connection-details" id="connectionDetails">
           <summary class="oc-connection" id="connectionStatus" title="Backend connection status" aria-label="Backend connection details" data-i18n-title="conn.backend_status" data-i18n-aria-label="uxp.status.connection_details">
             <span class="oc-conn-dot" id="connDot" aria-label="Backend offline" data-i18n-aria-label="conn.dot_disconnected"></span>
@@ -2125,6 +2129,7 @@
 
   <script type="module" src="studio-workbench-v2.js"></script>
   <script type="module" src="main.js"></script>
+  <script type="module" src="keta-shell.js"></script>
   <script type="module">
     if (localStorage.getItem("opencut_debug") === "1") {
       import("./udt-smoke.js");
